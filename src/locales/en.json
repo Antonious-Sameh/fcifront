@@ -1,0 +1,278 @@
+{
+  "sidebar": {
+    "quiz": "Career Quiz",
+    "dashboard": "Dashboard",
+    "universities": "University",
+    "courses": "Courses",
+    "my_courses": "My Courses",
+    "admin": "Admin",
+    "careers": "Careers",
+    "departments": "Departments",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "profile": "Profile"
+  },
+  "admin_sidebar": {
+    "panel": "Admin Panel",
+    "overview": "Dashboard",
+    "users": "User Management",
+    "courses": "Courses Management",
+    "activation": "Activation System",
+    "requests": "Subscription Requests",
+    "content": "Content Management",
+    "back_to_app": "Back to App"
+  },
+  "topbar": {
+    "search": "Search...",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "user": "User",
+    "menu": "Menu",
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Please enter your details to sign in",
+    "email": "Email Address",
+    "password": "Password",
+    "role": "Select Role",
+    "student": "Student",
+    "admin": "Admin",
+    "remember": "Remember me",
+    "submit": "Log In",
+    "error_empty": "Please fill in all fields.",
+    "email_placeholder": "name@example.com",
+    "password_placeholder": "Enter your password",
+    "error_invalid": "Invalid email or password"
+  },
+  "register": {
+    "title": "Create Account"
+  },
+  "logout": {
+    "confirm_title": "Are you sure you want to logout?",
+    "confirm_desc": "You will be returned to the login screen and need to sign in again.",
+    "confirm": "Logout",
+    "cancel": "Cancel"
+  },
+  "course_status": {
+    "locked": "Locked",
+    "pending": "Pending",
+    "active": "Active",
+    "activate": "Activate Course",
+    "awaiting_approval": "Awaiting Approval"
+  },
+  "dashboard": {
+    "greeting": "Welcome back, {{name}}",
+    "description": "Access your university resources, enrolled courses, and departments.",
+    "my_courses": "My Courses"
+  },
+  "university": {
+    "title": "University",
+    "year_1": "1st Year",
+    "year_2": "2nd Year",
+    "year_3": "3rd Year",
+    "year_4": "4th Year",
+    "term_1": "Term 1",
+    "term_2": "Term 2",
+    "subjects": "Subjects",
+    "select_year": "Select your academic year",
+    "select_term": "Select current term",
+    "select_subject": "Select a subject to view resources"
+  },
+  "courses": {
+    "title": "Courses",
+    "my_courses": "My Courses",
+    "activate": "Activate Course",
+    "enter_code": "Enter Activation Code",
+    "request_whatsapp": "Request via WhatsApp",
+    "code_placeholder": "e.g. COURSE001",
+    "submit": "Submit",
+    "success": "Course activated successfully!",
+    "request_success": "Subscription request sent!",
+    "error": "Invalid activation code.",
+    "no_courses": "No courses activated yet.",
+    "progress": "Progress",
+    "lessons": "Lessons",
+    "materials": "Materials",
+    "browse": "Browse Courses",
+    "no_enrolled": "You haven't enrolled in any course yet"
+  },
+  "careers": {
+    "title": "Career Paths",
+    "subtitle": "Your roadmap from zero to hero in the job market",
+    "view_roadmap": "View Roadmap",
+    "tools": "Steps/Tools",
+    "paths": {
+      "foundation": {
+        "name": "CS Foundation",
+        "desc": "The right start for any CS student, without this you are an incomplete coder.",
+        "why": "Because it teaches you how computers think, not just how to code."
+      },
+      "frontend": {
+        "name": "Frontend Development",
+        "desc": "The UI engineer, responsible for everything the user sees.",
+        "why": "If you love seeing your code's result instantly and enjoy design and interaction."
+      },
+      "backend": {
+        "name": "Backend Development",
+        "desc": "The brain behind the scenes, responsible for data and systems.",
+        "why": "If you love logic, dealing with databases, and building complex systems."
+      },
+      "fullstack": {
+        "name": "Full Stack Developer",
+        "desc": "The beast who can build the entire website from scratch (Front & Back).",
+        "why": "If you want to understand every detail of the project and increase your freelance opportunities."
+      },
+      "mobile": {
+        "name": "Mobile App Development",
+        "desc": "Building apps for Android and iOS using one codebase (Flutter/React Native) or Native.",
+        "why": "If you want to create apps, see them on your phone, and control hardware like Camera and GPS."
+      },
+      "data-analysis": {
+        "name": "Data Analysis",
+        "desc": "Extracting treasures and insights from numbers to help companies make decisions.",
+        "why": "If you are into statistics and love drawing smart conclusions from complex data."
+      },
+      "ai": {
+        "name": "AI & Machine Learning",
+        "desc": "Teaching machines how to think, predict, and perform smart tasks like humans.",
+        "why": "If you want to be part of the future and build systems like ChatGPT or self-driving cars."
+      },
+      "cyber": {
+        "name": "Cyber Security",
+        "desc": "Protecting systems and discovering vulnerabilities (Ethical Hacking).",
+        "why": "If you love challenges, solving puzzles, and protecting data from breaches."
+      }
+    }
+  },
+  "roadmap": {
+    "steps_title": "Roadmap Steps",
+    "estimated_time": "Est. Time",
+    "difficulty": "Difficulty",
+    "get_started": "Start Task",
+    "status_completed": "Completed",
+    "status_current": "In Progress",
+    "status_locked": "Locked",
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    }
+  },
+  "departments": {
+    "title": "College Departments",
+    "subtitle": "Your comprehensive guide to understanding CS majors and choosing the best fit",
+    "view_details": "Details & Subjects",
+    "type_label": "Type",
+    "list": {
+      "cs": {
+        "name": "Computer Science (CS)",
+        "type": "General",
+        "desc": "Focuses on software engineering and algorithms.",
+        "suitable": "For those who love coding and high-level logic."
+      },
+      "is": {
+        "name": "Information Systems (IS)",
+        "type": "General",
+        "desc": "A mix of programming and business management.",
+        "suitable": "If you like management and business logic."
+      },
+      "it": {
+        "name": "Information Technology (IT)",
+        "type": "General",
+        "desc": "Focuses on networking, servers, and infrastructure.",
+        "suitable": "If you're into hardware and networking."
+      },
+      "ai": {
+        "name": "Artificial Intelligence (AI)",
+        "type": "Special (Paid)",
+        "desc": "Simulating human intelligence in machines.",
+        "suitable": "For math lovers and innovators."
+      },
+      "cyber": {
+        "name": "Cyber Security",
+        "type": "Special (Paid)",
+        "desc": "Protecting systems and data from attacks.",
+        "suitable": "For security enthusiasts and problem solvers."
+      }
+    }
+  },
+  "admin": {
+    "overview": "Admin Dashboard",
+    "total_students": "Total Students",
+    "total_courses": "Total Courses",
+    "pending_requests": "Pending Requests",
+    "activated_codes": "Activated Codes",
+    "active_courses": "Active Courses",
+    "users": "Users",
+    "users_desc": "Manage all registered students in the platform.",
+    "name": "Name",
+    "email": "Email",
+    "date": "Registration Date",
+    "status": "Status",
+    "action": "Action",
+    "actions": "Actions",
+    "generate_codes": "Generate Codes",
+    "track_codes": "Track Codes",
+    "quantity": "Quantity",
+    "generate": "Generate",
+    "course": "Course",
+    "course_name": "Course Name",
+    "students_enrolled": "Students Enrolled",
+    "add_course": "Add Course",
+    "edit": "Edit",
+    "delete": "Delete",
+    "request_date": "Request Date",
+    "approve": "Approve",
+    "reject": "Reject",
+    "filter_all": "All",
+    "filter_pending": "Pending",
+    "filter_approved": "Approved",
+    "filter_rejected": "Rejected",
+    "used_by": "Used By",
+    "unused": "Unused",
+    "content_management": "Content Management",
+    "manage_careers": "Manage Careers",
+    "manage_departments": "Manage Departments",
+    "manage_roadmaps": "Manage Roadmaps"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "mark_read": "Mark as read",
+    "clear_all": "Clear all",
+    "empty": "No notifications"
+  },
+  "tabs": {
+    "lectures": "Lectures",
+    "sections": "Sections",
+    "assignments": "Assignments"
+  },
+  "content": {
+    "title": "Title",
+    "description": "Description",
+    "deadline": "Deadline",
+    "no_content": "No content available for this section yet."
+  },
+  "actions": {
+    "download_pdf": "Download PDF",
+    "upload_assignment": "Upload Assignment",
+    "back": "Back",
+    "view_details": "View Details",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "coming_soon": "This feature is coming soon."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "en": "English",
+    "ar": "Arabic"
+  },
+  "breadcrumbs": {
+    "home": "Home"
+  }
+}
