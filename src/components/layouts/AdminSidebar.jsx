@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/context/LanguageContext.jsx';
 import { 
   LayoutDashboard,
+  Settings,
   Users,
   BookOpen,
   Key,
@@ -31,6 +32,7 @@ const AdminSidebar = ({ isOpen, onClose }) => {
     { icon: Building2, label: language === 'ar' ? 'الأقسام' : 'Departments', path: '/admin/departments' },
     { icon: Key, label: t('admin_sidebar.activation'), path: '/admin/activation' },
     { icon: MessageSquare, label: t('admin_sidebar.requests'), path: '/admin/requests' },
+    { icon: Settings, label: t('admin_sidebar.settings') || 'الإعدادات', path: '/admin/settings' },
   ];
 
   useEffect(() => {

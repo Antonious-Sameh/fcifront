@@ -37,6 +37,7 @@ const AdminRequestsPage    = lazy(() => import('@/pages/admin/AdminRequestsPage.
 const AdminContentPage     = lazy(() => import('@/pages/admin/AdminContentPage.jsx'));
 const AdminCareersPage     = lazy(() => import('@/pages/admin/AdminCareersPage.jsx'));
 const AdminDepartmentsPage = lazy(() => import('@/pages/admin/AdminDepartmentsPage.jsx'));
+const AdminSettingsPage    = lazy(() => import('@/pages/admin/AdminSettingsPage.jsx'));
 
 const PageLoader = () => (
   <div className="flex flex-col gap-4 p-8">
@@ -84,6 +85,7 @@ function App() {
                 <Route path="/admin/content" element={<ProtectedRoute requiredRole="admin"><Suspense fallback={<PageLoader />}><AdminContentPage /></Suspense></ProtectedRoute>} />
                 <Route path="/admin/careers" element={<ProtectedRoute requiredRole="admin"><Suspense fallback={<PageLoader />}><AdminCareersPage /></Suspense></ProtectedRoute>} />
                 <Route path="/admin/departments" element={<ProtectedRoute requiredRole="admin"><Suspense fallback={<PageLoader />}><AdminDepartmentsPage /></Suspense></ProtectedRoute>} />
+                <Route path="/admin/settings" element={<ProtectedRoute requiredRole="admin"><Suspense fallback={<PageLoader />}><AdminSettingsPage /></Suspense></ProtectedRoute>} />
 
                 {/* Catch-all */}
                 <Route path="*" element={<NotFoundPage />} />

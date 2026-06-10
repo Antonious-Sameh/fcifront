@@ -20,7 +20,8 @@
     "activation": "Activation System",
     "requests": "Subscription Requests",
     "content": "Content Management",
-    "back_to_app": "Back to App"
+    "back_to_app": "Back to App",
+    "settings": "Settings"
   },
   "topbar": {
     "search": "Search...",

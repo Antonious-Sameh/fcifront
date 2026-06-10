@@ -115,6 +115,8 @@ export const coursesAPI = {
   },
   getById: (id) => apiFetch(`/courses/${id}`),
   getOne: (id) => apiFetch(`/courses/${id}`),
+  addVideo: (courseId, data) => apiFetch(`/courses/${courseId}/videos`, { method: 'POST', body: JSON.stringify(data) }),
+  deleteVideo: (courseId, videoId) => apiFetch(`/courses/${courseId}/videos/${videoId}`, { method: 'DELETE' }),
   getMyCourses: () => apiFetch('/courses/my'),
   enroll: (id) => apiFetch(`/courses/${id}/enroll`, { method: 'POST' }),
   create: (data) => apiFetch('/courses', { method: 'POST', body: JSON.stringify(data) }),

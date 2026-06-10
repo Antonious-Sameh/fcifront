@@ -277,8 +277,7 @@ const SubjectDetailPage = () => {
                                 <div className="flex gap-2 shrink-0">
                                   <a
                                     href={active.pdfUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    download
                                     className={cn(
                                       'flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-lg',
                                       col.solid
@@ -288,7 +287,7 @@ const SubjectDetailPage = () => {
                                     {isAr ? 'تحميل PDF' : 'Download PDF'}
                                   </a>
                                   <a
-                                    href={active.pdfUrl}
+                                    href={`https://docs.google.com/viewer?url=${encodeURIComponent(active.pdfUrl)}&embedded=true`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border border-border bg-background hover:bg-muted transition-colors"

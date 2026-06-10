@@ -20,7 +20,8 @@
     "activation": "نظام التفعيل",
     "requests": "طلبات الاشتراك",
     "content": "إدارة المحتوى",
-    "back_to_app": "العودة للتطبيق"
+    "back_to_app": "العودة للتطبيق",
+    "settings": "الإعدادات"
   },
   "topbar": {
     "search": "بحث...",
