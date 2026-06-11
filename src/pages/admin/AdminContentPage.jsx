@@ -22,6 +22,14 @@ const YEAR_LABELS = { 1:'السنة الأولى', 2:'السنة الثانية'
 const TERM_LABELS = { 1:'الترم الأول', 2:'الترم الثاني' };
 
 const emptySubjectForm = { slug:'', nameAr:'', nameEn:'', descAr:'', year:'1', term:'1', code:'', instructor:'', creditHours:'3', order:'0' };
+// استخراج YouTube ID من رابط كامل أو ID مباشر
+const extractYtId = (input) => {
+  if (!input) return '';
+  input = input.trim();
+  if (!input.includes('/') && !input.includes('?')) return input;
+  const m = input.match(/(?:v=|youtu\.be\/|embed\/)([^&?#\n]+)/);
+  return m ? m[1] : '';
+};
 const emptyLectureForm = { titleAr:'', titleEn:'', type:'lecture', videoId:'', duration:'', order:'0' };
 
 const FormField = ({ label, required, children, hint, error }) => (
@@ -441,12 +449,25 @@ export default function AdminContentPage() {
                   placeholder="Lecture 1: Introduction to..." className="h-10" dir="ltr"/>
               </FormField>
 
-              <FormField label="YouTube Video ID" hint="مثال: dQw4w9WgXcQ (الـ ID بعد v= في رابط اليوتيوب)">
+              <FormField label="رابط YouTube أو Video ID" hint="الصق رابط YouTube كامل أو الـ ID مباشرة — مثال: https://youtube.com/watch?v=abc123 أو abc123">
                 <Input value={lectureForm.videoId} onChange={e=>setLectureForm(p=>({...p,videoId:e.target.value.trim()}))}
                   placeholder="dQw4w9WgXcQ" className="h-10" dir="ltr"/>
               </FormField>
 
               <div className="grid grid-cols-2 gap-4">
+                {extractYtId(lectureForm.videoId) && (
+                <div className="rounded-xl overflow-hidden border border-border mt-1">
+                  <img
+                    src={`https://img.youtube.com/vi/${extractYtId(lectureForm.videoId)}/mqdefault.jpg`}
+                    alt="thumbnail"
+                    className="w-full object-cover max-h-32"
+                    onError={e => e.target.style.display='none'}
+                  />
+                  <p className="text-xs text-emerald-600 font-semibold px-3 py-1.5 bg-emerald-500/5">
+                    ✓ تم التعرف على الفيديو — ID: {extractYtId(lectureForm.videoId)}
+                  </p>
+                </div>
+              )}
                 <FormField label="المدة" hint="مثال: 45 دقيقة">
                   <Input value={lectureForm.duration} onChange={e=>setLectureForm(p=>({...p,duration:e.target.value}))}
                     placeholder="45 دقيقة" className="h-10"/>
